@@ -1,0 +1,227 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Nabar</title>
+	<link rel="stylesheet"  href="{% static 'MDB/css/bootstrap.css' %}">
+	<link rel="stylesheet"  href="{% static 'MDB/css/bootstrap.css' %}">
+	<link rel="stylesheet"  href="{% static 'fonts icons/fa/css/all.css' %}">
+	<style>
+		.nav-link
+		{
+			border: 2px solid cyan;
+			border-radius:10px;
+			margin: 10px;
+			padding: 2px;
+		}
+		#frist
+		{
+			color: yellow;
+			background-color: cyan;
+		}
+		.marquee
+		{
+			background-color: yellow;
+			color: red;
+			border: 1px solid red;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<nav class="navbar navbar-dark bg-dark navbar-expand-sm navbar-expand-md "> 
+			<div class="container-fluid">
+				<h1 id="frist"> <a href="" class="navbar-brand"> <i class="fa-solid fa-utensils mr-2" style="color:yellow; border: 3px solid yellow; background-color:red; padding:3px ; "></i>V - Food Center</h1></a>
+				<button class="navbar-toggler" type="button"  data-toggle="collapse" data-target="#links" >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+				<div class="collapse navbar-collapse" id="links" >
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item ">
+							<a href="{% url 'fornt'%}" class="nav-link  "><i class="fa-solid fa-house p-2"  style="color:red;"></i>
+                             Home</a>
+							
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link "><i class="fa-solid fa-clipboard p-2" style="color:red;"></i>
+                             Menus</a>
+							
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link"><i class="fa-brands fa-docker p-2" style="color:red;"></i>
+                             Order</a>
+							
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link"><i class="fa-solid fa-motorcycle p-2" style="color:red;"></i>
+
+                             Delivery</a>
+							
+						</li>
+						<li class="nav-item">
+							<a href="" class="nav-link"><i class="fa-solid fa-pen-fancy p-2" style="color:red;"></i>
+                            About</a>
+						</li>
+					</ul>
+					
+				</div>
+				<div>
+					<button class="btn btn-sm btn-outline-danger m-3 "><a style="text-decoration:none ;color:red; " href="{% url 'log' %}">LogIn</a></button>
+					<button class="btn  btn-sm btn-outline-danger " data-toggle="modal" data-target="#Register">Register</button>
+				</div>
+			</div>
+		</nav>
+	 </div>
+	 <div class="modal" id="login">
+	 	<div class="modal-dialog">
+	 		<div class="modal-content animatedslideInRight">
+	 			<div class="modal-header bg-dark">
+	 				<h1 class="text-white bg-dark"> Log IN</h1>
+	 				<button class="close bg-info" data-dismiss="modal" >
+	 					<i class="fa fa-times-circle"></i>
+	 				</button>
+	 			</div>
+	 			<div class="modal-body bg-primary">
+	 				<form>
+	 					<div class="form-group">
+	 						<input type="text" placeholder="Enter User Name" class="form-control"> 
+	 					</div>
+	 					<div class="form-group">
+					        <input type="password" placeholder="Enter Password" class="form-control"> 
+					    </div>
+					    <div>
+         	 				<a href=""> <span class="text-white">Forget Password</span></a>
+         	 			</div>
+	 				</form>
+	 			</div>
+	 			<div class="modal-footer bg-dark">
+	 				<button class="btn btn-sm btn-outline-danger text-white bg-info">Submit</button>
+	 			    <button class="btn btn-sm btn-outline-danger text-white bg-info">Reset</button>
+				</div>
+	 		</div>
+	 	</div>
+	 </div>
+	  <div class="modal" id="Register">
+	 	<div class="modal-dialog">
+	 		<div class="modal-content animatedslideInRight">
+	 			<div class="modal-header bg-dark">
+	 				<h1 class="text-white bg-dark">Register</h1>
+	 				<button class="close bg-info" data-dismiss="modal" >
+	 					<i class="fa fa-times-circle"></i>
+	 				</button>
+	 			</div>
+	 			<div class="modal-body bg-primary">
+	 				<form>
+	 					<div class="form-group">
+	 						<input type="text" placeholder="Enter User Name" class="form-control"> 
+	 					</div>
+	 					<div class="form-group">
+					        <input type="text" placeholder="Enter Gmail" class="form-control"> 
+					    </div>
+					    <div class="form-group">
+					        <input type="password" placeholder="Enter Password" class="form-control"> 
+					    </div>
+					    <div class="form-group">
+					        <input type="password" placeholder="Enter Confrim Password" class="form-control"> 
+					    </div>
+	 				</form>
+	 			</div>
+	 			<div class="modal-footer bg-dark">
+	 				<button class="btn btn-sm btn-outline-danger text-white bg-info ">Submit</button>
+				</div>
+	 		</div>
+	 	</div>
+	 </div>
+<body>
+	<marquee class="marquee" ><h3>V-food center 100% Quality  10Year Experience</h3></marquee>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="card">
+					<div class="card-header bg-info">
+						<img src="{% static 'images/food2.jpg' %} " class="img-fluid" style="width: 500px; height: 220px; ">
+					</div>
+					<div class="card-body bg-info">
+						<h3>Burgar</h3>
+						<p align="justify">matter how you prepare a burger, this dish is will leave you craving for more each time you eat it you have it. So, this time when your kids want to relish something good and delicious at home, prepare this simple yet delicious Vegetable Burger recipe.</p>
+						<span>Rs.180 </span>
+						<button class="btn btn-dark text-warning btn-sm"> Order now</button>
+					</div>
+					
+				</div>
+				
+			</div>
+			<div class="col-md-3" style="width:200px; height:100px;">
+				<div class="card">
+					<div class="card-header bg-info">
+						<img src="{% static 'images/mutton-biryani.jpg' %} " class="img-fluid " style="height: 220px;" >
+					</div>
+					<div class="card-body bg-info">
+						<h3>Mutton Biryani</h3>
+						<p align="justify">A hearty mutton biryani that will impress your guests instantly. Biryani is a dish that nobody can ever resist. Be it a dinner party or any celebratory occasion, biryani seems to be an ideal main dish to serve along with a spicy salan or refreshing raita.</p>
+						<span>Rs.1000 </span>
+						<button class="btn btn-dark text-warning btn-sm">Order now</button>
+					</div>
+					
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="card">
+					<div class="card-header bg-info">
+						<img src="{% static 'images/pongal.jpg' %}" class="img-fluid">
+							
+					</div>
+					<div class="card-body bg-info">
+						<h3>Pongal</h3>
+						<p align="justify">The main ingredients in Pongal are rice, milk, moong dal (sometimes) and other regional additions. There are four variations of pongal that you can enjoy in the state - Venn Pongal, Puli Pongal (made with tamarind), Sakkarai Pongal (made with jaggery) and Melagu Pongal (made with black pepper). </p>
+						<span>Rs.200</span>
+						<button class="btn btn-sm btn-dark text-warning ">Order now</button>
+					</div>
+				</div>
+					
+			</div>
+			<div class="col-md-3">
+				<div class="card">
+					<div class="card-header bg-info">
+						<img src="{% static 'images/chicken.jpg' %}" class="img-fluid">
+							
+					</div>
+					<div class="card-body bg-info">
+						<h3>Chicken</h3>
+						<p align="justify">This mouth-watering dish is a specialty of the Chettiyar community of Tamil Nadu. Contrary to popular believes, there are many regional non vegetarian dishes within the broad category of Tamil food.Every region has its variations and Chettinad cuisine happens to be one of them.  </p>
+						<span>Rs.500</span>
+						<button class="btn btn-sm btn-dark text-warning ">Order now</button>
+					</div>
+				</div>
+					
+			</div>
+			<div class="col-md-3">
+				<div class="card">
+					<div class="card-header bg-info">
+						<img src="{% static 'images/chicken.jpg' %}" class="img-fluid">
+							
+					</div>
+					<div class="card-body bg-info">
+						<h3>Chicken</h3>
+						<p align="justify">This mouth-watering dish is a specialty of the Chettiyar community of Tamil Nadu. Contrary to popular believes, there are many regional non vegetarian dishes within the broad category of Tamil food.Every region has its variations and Chettinad cuisine happens to be one of them.  </p>
+						<span>Rs.500</span>
+						<button class="btn btn-sm btn-dark text-warning ">Order now</button>
+					</div>
+				</div>
+					
+			</div>
+
+			
+		</div>
+		
+	</div>
+
+</body>
+<script src="{% static 'MDB/js/jquery.js' %}"></script>
+	<script src="{% static 'MDB/js/popper.js' %}"></script>
+	<script src="{% static 'MDB/js/bootstrap.js' %}"></script>
+	<script src="{% static 'MDB/js/mdb.js' %}"></script>
+
+</body>
+</html>

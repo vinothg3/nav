@@ -1,0 +1,180 @@
+
+*
+{
+	margin: 0px;
+	padding: 0px;
+}
+body
+{
+	margin: 0px;
+}
+header
+{
+
+	margin: 0px;
+	align-items: center;
+	padding: 20px;
+	border: 5px solid orange;
+	background-color: green;
+}
+header>div>h1
+{
+	color:red;
+	margin: 10px;
+	text-shadow: 2px 0 5px yellow;
+}
+header>div>h1>span
+{
+	margin:10px;
+	font-size: 30px;
+	padding: 10px;
+	color:yellow;
+	background-color: green;
+	border-radius: 30% 0px 30% 0%;
+	border: 3px solid cyan;
+	text-shadow:2px 0px 7px red ;
+	
+}
+header>div>h1>span:hover
+{
+	background-color:red;
+	color: green;
+	cursor: pointer;
+	text-shadow:2px 0px 7px yellow;
+}
+
+@media(min-width:0px) and (max-width: 800px)
+{
+	header
+	{
+		height:120px;
+
+	}
+	.a1
+	{
+		position: relative;
+		top:75px;
+		left: 0px;
+	}
+} 
+
+@media(min-width: 0px)and (max-width: 540px)
+{
+	header
+	{
+		height: 120px;
+		flex-direction: row;
+	}
+	.a1
+	{
+		position: relative;
+		left: 10px;
+		top: 75px;
+		font-size: 14px;
+
+	}
+}
+@media(min-width: 0px)and (max-width: 487px)
+{
+	header
+	{
+		height: 120px;
+		flex-direction: row;
+	}
+	.a1
+	{
+		position: relative;
+		left: 10px;
+		top: 75px;
+		font-size: 10px;
+
+	}
+}
+.a1
+{
+
+	margin: -43px 0px 11px 0px;
+	display:flex;
+	justify-content:flex-end;
+	align-items: flex-start;
+	list-style: none;
+}
+.vb
+{
+	border: 3px solid cyan;
+	margin: 5px;
+	padding: 5px ;
+	color: yellow;
+	text-decoration: none;
+	background-color:green;
+	border-radius: 20%;
+	font-family:"comic sans ms",sans-serif;
+
+ 
+}
+.vb:hover
+{
+	cursor: pointer;
+	box-shadow:2px 0px 7px yellow;
+	background-color:cyan;
+	border: 3px solid green;
+	color: red;
+	text-shadow:2px 0px 7px blue;
+	text-decoration-line: line-through;
+}
+#food
+{
+	background-repeat: no-repeat;
+    background-attachment: fixed;   
+	background-size:cover;
+	height:100vh;
+
+}
+#food>div
+{
+	background-color:rgba(0, 0, 0,0.4);
+	height:100vh;
+	color: white;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	text-align: center;
+	flex-direction: column;
+
+}
+#food>div>h1
+{
+	color: rgba(255, 100, 255, 0.7);
+	font-family:"comic sans ms",sans-serif;
+	margin: 0px 0px 20px 0px;
+
+}
+p
+{
+	color: yellow;
+	font-size:18px;
+}
+
+p>span
+{
+	color: darkcyan;
+	text-decoration-line: underline ;
+}
+button
+{
+	color: yellow;
+	background-color: green;
+	border: 2px solid cyan;
+	border-radius: 30% 0 30% 0;
+	padding: 10px;
+	margin: 20px;
+	font-size:18px;
+}
+button:hover
+{
+	color:cyan;
+	background-color: red;
+	box-shadow:0px 5px 7px yellow;
+	font-size: 20px;
+	font-family: sans-serif;
+}

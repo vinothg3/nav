@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>isomatric box</title>
+	<link rel="stylesheet" href="{% static 'css/fornt.css' %}">
+</head>
+<body>
+	<header>
+		<div><h1><span>V</span><i>food center</i></h1>
+	    <ul class="a1">
+		    <li><a href="{% url 'home1' %}" class="a2 vb">HOME</a> </li>
+	     	<li><a href="{% url 'log'%}" class="a3 vb">LOG IN</a> </li>
+		    <li><a href="" class="a4 vb">FOOD</a> </li>
+		    <li><a href="#" class="a5 vb">ORDER</a> </li>
+		    <li><a href="#" class="a6 vb">CONTECT</a> </li>
+	 	    <li><a href="#" class="a7 vb">ABOUT</a> </li>
+	    </ul> 
+	    </div>
+	</header>
+	<div style="background-image:url('{% static 'images/food2.jpg' %}'   )"  id="food"  >
+		<div>
+			<h1>WELCOME TO<span style="color:yellow; border:2px solid cyan; border-radius: 30% 0 30% 0; background-color: green; margin:5px;"> <i>V <i></span><span style="color: cyan;">food center</span></h1>
+			<p class="color"> <span>Indian Dinner Menu:</span>
+                    Appetizer. Chicken Tikka Kebab. Khaman. Mint Cilantro Chutney.
+                    <span>Drinks:</span> Shikanji Nimbu Pani.
+                    <span>Main course:</span> Rajma. Palak Paneer. Chicken Tikka Masala.
+                   <span> Rice dish:</span> Jeera Rice.
+                   <span> Bread:</span> Naan.
+                   <span> Raita:</span> Boondi raita.
+                   <span> Dessert:</span> Kheer and/or Gulab Jamun.
+               </p>   
+            <div>	
+            <button >
+            	Order
+            	
+            </button>
+             </div>
+		</div>
+
+	</div>
+</body>
+
+</body>
+</html>
